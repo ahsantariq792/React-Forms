@@ -6,7 +6,7 @@ function Navbar() {
         <>
             <nav class="navbar navbar-expand-lg navbar-light bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" >Navbar</a>
+                    <a class="navbar-brand" >React Forms</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -15,12 +15,16 @@ function Navbar() {
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" >Home</a>
                             </li>
+                            <Link to="/signup">
                             <li class="nav-item">
                                 <a class="nav-link">Signup</a>
                             </li>
+                            </Link>
+                            <Link to="/">
                             <li class="nav-item">
                                 <a class="nav-link">Login</a>
                             </li>
+                            </Link>
                             <Link to="/carform">
                                 <li class="nav-item">
                                     <a class="nav-link">Car form</a>

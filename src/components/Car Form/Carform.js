@@ -129,13 +129,11 @@ function Carform() {
                   name="title"
                   id="title"
                   className="form-input"
-
-
                   value={formik.values.title}
+                  variant="outlined"
                   onChange={formik.handleChange}
                   error={formik.touched.title && Boolean(formik.errors.title)}
                   helperText={formik.touched.title && formik.errors.title}
-
                 />
 
               </div>
@@ -153,7 +151,6 @@ function Carform() {
                   onChange={formik.handleChange}
                   error={formik.touched.description && Boolean(formik.errors.description)}
                   helperText={formik.touched.description && formik.errors.description}
-
                 />
               </div>
 
@@ -599,7 +596,7 @@ function Carform() {
                 <div className="profile">
                   <img src={pic} alt="user profile" />
                 </div>
-                
+
                 <br /><br />
 
                 <div id="sellerinfo">
@@ -669,6 +666,9 @@ function Carform() {
                 <Button id="btn" variant="contained" color="success" type="submit">
                   Submit
                 </Button>
+                {/* <div className="input_field">
+                  <input type="submit" className="btn-submit" value="Post Now" />
+                </div> */}
               </div>
             </div>
           </form>
